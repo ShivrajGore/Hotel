@@ -1,0 +1,83 @@
+# Hotels plugin by kernitus
+# Bukkit Page: http://dev.bukkit.org/bukkit-plugins/hotels/
+# Spigot Page: https://www.spigotmc.org/resources/hotels.2047/
+# GitHub Page: https://github.com/kernitus/BukkitHotels
+# REPORT BUGS HERE: https://github.com/kernitus/BukkitHotels/issues
+
+# Want to help translate? Look here: https://github.com/kernitus/BukkitHotels/wiki/Localisation
+
+# Available languages: (you can use any of the listed codes, case insensitive)
+# English (U.K.): en, enGB
+# Italian (Italiano): it, itIT
+# Simplified Chinese (简体中文): zh, zhCN
+# Traditional Chinese (繁體中文): zhTW
+# French (Français): fr, frFR
+# Russian (Русский): ru, ruRU
+# Spanish (Español): es, esES
+# German (Deutsch): de, deDE
+# Polish (Polski): pl, plPL
+# Hungarian (Magyar): hu, huHU
+language: auto
+
+# Maximum amount of hotels a player can own
+maxHotelsOwned: 3
+
+# Maximum amount of rooms a player can own (in total)
+maxRoomsOwned: 3
+
+# Maximum amount of rooms a player can own (per hotel)
+maxRoomsOwnedPerHotel: 2
+
+# Maximum times a player can extend their rent (per rented room)
+maxRentExtend: 3
+
+# How often Hotels checks for expired rooms and updates room signs
+roomTaskTimerMinutes: 2
+
+# How long, in seconds, Hotels should wait before updating reception
+# signs after rent has expired
+receptionSignUpdateDelay: 10
+
+# How long, in seconds, Hotels should wait in between room resets
+# this reduces lag, but if allowPlayersIntoFreeRooms and allowPlayersToOpenContainersInFreeRooms
+# are enabled people could sneak in in these few seconds and take stuff
+roomResetDelay: 5
+
+# Tax on revenue from hotels. It is applied to the money players spend in a hotel
+# before the money is given to the hotel owner.
+# Can either be a percentage (25%) or a set amount every time (50)
+# If the money spent is less than the set amount the owner will not receive any money.
+tax: 20%
+
+# If players should be allowed to enter free rooms
+allowPlayersIntoFreeRooms: true
+
+# If players should be allowed to open containers in free rooms
+allowPlayersToOpenContainersInFreeRooms: false
+
+# If hotel owners should be stopped from interfering with rented rooms
+stopOwnersEditingRentedRooms: true
+
+# If doing /ht commands should only display the commands a player has permission for
+onlyDisplayAllowedCommands: true
+
+# If rooms upon creation should be resettable
+# You can override this in-game per-room with the /roomreset command
+defaultReset: false
+
+####################
+#### EXTRA BITS ####
+####################
+
+# If Hotels should check for updates
+# This doesn't download the update, it just tells you it's available
+# Modes: auto, bukkit, spigot, off
+updates: auto
+
+# Enable this option for troubleshooting purposes only.
+# This will make debug messages appear
+debug: false
+
+# This denotes the current config version
+# Changing this will reset the config
+version: 7
